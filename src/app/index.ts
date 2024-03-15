@@ -5,6 +5,7 @@ import bodyParser from 'body-parser';
 export async function initServer() {
   const app = express();
   app.use(bodyParser.json());
+
   const graphqlServer = new ApolloServer({
     typeDefs: `
       type deepak {
